@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f5f4ef">
+<title>Password check — privately, on this device</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><span class="mark" aria-hidden="true">✳</span><span>PERSONAL SECURITY TOOL</span></div>
+  <header><h1>A little more peace of mind.</h1><p>Check how your password holds up. Everything runs privately, right here on your device.</p></header>
+  <main>
+    <div class="layout">
+      <section class="panel" aria-label="Password strength">
+        <div class="labelrow"><label for="password">Your password</label><span class="hint">Nothing is stored</span></div>
+        <div class="inputwrap"><input id="password" type="password" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Type or paste to check" aria-describedby="privacy"><button id="toggle" type="button" aria-label="Show password" aria-pressed="false">Show</button></div>
+        <div class="strength" aria-live="polite">
+          <div class="strengthtop"><span>Strength</span><span id="rating">—</span></div>
+          <div class="bars" aria-hidden="true"><i class="bar"></i><i class="bar"></i><i class="bar"></i><i class="bar"></i></div>
+          <p class="summary" id="summary">Your check will appear here as you type.</p>
+        </div>
+        <div class="private" id="privacy"><svg width="15" height="16" viewBox="0 0 16 18" fill="none" aria-hidden="true"><rect x="2" y="7" width="12" height="9" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M5 7V5a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.5"/></svg><span>Private by design · Your password never leaves this page</span></div>
+      </section>
+      <section class="panel" aria-label="Password checklist">
+        <div class="checkhead"><h2>Good passwords usually…</h2><span class="count" id="count">0 of 5</span></div>
+        <div class="checks">
+          <div class="check" data-check="length"><span class="dot"></span><span>Use at least 8 characters</span></div>
+          <div class="check" data-check="upper"><span class="dot"></span><span>Mix uppercase and lowercase</span></div>
+          <div class="check" data-check="number"><span class="dot"></span><span>Include a number</span></div>
+          <div class="check" data-check="symbol"><span class="dot"></span><span>Include a symbol</span></div>
+          <div class="check" data-check="unique"><span class="dot"></span><span>Avoid obvious repeats</span></div>
+        </div>
+      </section>
+    </div>
+    <div class="tip"><span aria-hidden="true">✳</span><span><b>A helpful tip:</b> A few unrelated words can make a password both memorable and hard to guess. Use a unique password for every account.</span></div>
+  </main>
+  <footer><span>Made for a quick, private check.</span><span>Try it with a password you can change afterward.</span></footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+
+
